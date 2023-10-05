@@ -1,0 +1,36 @@
+<HTML> 
+<HEAD> <TITLE> calculadora </TITLE>
+</HEAD>
+<BODY>
+
+    <h1>Calculadora</h1>
+    <form name='formcalc' action='calculadora.php' method='post'>
+
+        <label for="operand1">Primer Operando:</label>
+        <input type="number" id="operand1" name="operand1" required>
+        <br>
+        <label for="operand2">Segundo Operando:</label>
+        <input type="number" id="operand2" name="operand2" required>
+        <br>
+        
+       
+            <input type=radio name=operation value="sum">Suma</input>
+            <input type=radio name=operation value="rest">Resta</input>
+            <input type=radio name=operation value="mult">Multiplicacion</input>
+            <input type=radio name=operation value="div">Division</input>
+
+        <br>
+        <button type="submit">Calcular</button>
+        <button type="button" onclick="resetForm()">Borrar</button>
+    </form>
+
+    <div id="result">
+        
+    </div>
+
+ 
+
+
+</FORM>
+</BODY>
+</HTML>
